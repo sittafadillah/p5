@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+     int nomor_komputer;
+     char nama_pemakai[30];
+     int lama_pakai;
+     long total_tagihan;
+     long diskon;
+
+
+     cout<<"Nomor komputer:";
+     cin>>nomor_komputer;
+
+     cout<<"Nama Pemakai:";
+     cin>>nama_pemakai;
+
+     cout<<"Lama Pemakaian:";
+     cin>>lama_pakai;
+
+     total_tagihan=lama_pakai*4000;
+
+     if (lama_pakai>5){
+        diskon=0.1*total_tagihan;
+        total_tagihan=total_tagihan-diskon;
+     }
+
+
+     cout<<"Nomor komputer : "<<nomor_komputer<<endl;
+     cout<<"Nama Pemakai : "<<nama_pemakai<<endl;
+     cout<<"Lama Pemakaian : "<<lama_pakai<<endl;
+     cout<<"total tagihan : "<<total_tagihan<<endl;
+
+     return 0;
+
+     }
+
