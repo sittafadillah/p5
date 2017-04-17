@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int banyak_mahasiswa;
+    float nilai;
+    float jumlahnilai=0;
+    float rata2;
+
+    cout<<"Banyak Mahasiswa :";
+    cin>>banyak_mahasiswa;
+
+    for(int i=0;i<banyak_mahasiswa;i++) {
+        cout<<"masukan nilai:";
+        cin>>nilai;
+        jumlahnilai = jumlahnilai + nilai;
+    }
+    rata2=jumlahnilai/banyak_mahasiswa;
+
+    cout<<"rata-rata="<<rata2;
+return 0;
+}
