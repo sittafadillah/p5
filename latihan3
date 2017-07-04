@@ -1,0 +1,25 @@
+#include <iostream> // Define iostream
+using namespace std; // menggunakan std
+int main()
+{
+
+float nilai;
+int Banyakmhs;
+float ratarata;
+float jumlahnilai=0;
+
+    cout << "Banyak Mahasiswa :" ;
+    cin >> Banyakmhs ;//membaca inputan dari keyboard
+
+ for (int i=0;i<Banyakmhs;i++){
+        cout<<"Masukan Nilai :";
+        cin>>nilai;
+    jumlahnilai = jumlahnilai + nilai;
+   }
+    ratarata = jumlahnilai/Banyakmhs;
+{
+
+ }cout<<"Rata-Rata : "<<ratarata<<endl;
+
+return 0;
+}
